@@ -1,12 +1,13 @@
 const http = require('http');
 
-const hostname = 'https://slackapphome.onrender.com';//'https://slackapphome.onrender.com'; //'127.0.0.0';
+//'https://slackapphome.onrender.com'; //'127.0.0.0';
+const hostname = 'slackapphome.onrender.com';
 const port = 8080;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, fukuura!\n');
+  res.end('Hello,!\n');
 });
 
 server.listen(port, hostname, () => {
